@@ -9,9 +9,11 @@ window.muse = {
 		a.download = crypto.randomUUID() + '.mp3'
 		a.href = window.URL.createObjectURL(new Blob([await mp3.extract(start, end)], {type : 'audio/mp3'}))
 		a.text = 'Download file'
-		document.body.append(a)
-		console.log(mp3)
-		document.body.append()
+		const pre = document.createElement('pre')
+		pre.innerHTML = JSON.stringify(mp3.mpeg, null, '\t') + '\n' + JSON.stringify(mp3,null, '\t')
+		
+		document.body.append(a, pre)
+
 	}
 }
 
