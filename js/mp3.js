@@ -1,4 +1,4 @@
-import ID3 from "./id3.js"
+import ID3 from "./id3tag.js"
 import MPEG from "./mpeg.js"
 
 export default class MP3{
