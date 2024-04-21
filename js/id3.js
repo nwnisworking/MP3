@@ -1,4 +1,4 @@
-export const ID3_TAG = Object.freeze({
+export default const ID3_TAG = Object.freeze({
 	AENC : 'Audio Encryption', 
 	ASPI : 'Audio Seek Point Index', 
 	APIC : 'Attached Picture', 
